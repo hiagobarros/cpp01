@@ -4,9 +4,9 @@
 
 int main ()
 {
-    Zombie* zombie = newZombie("tuntuntunsarur(heap)");
+    Zombie* zombie = newZombie("tuntuntunsarur");
     zombie->announce();
     delete zombie;
-    randomChump("pralareropralala(stack)");
+    randomChump("pralareropralala");
     return(0);
 }

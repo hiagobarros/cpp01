@@ -3,11 +3,11 @@ GREEN = \033[32m
 BLUE = \033[34m
 RESET = \033[0m
 
-NAME = zombieLand
+NAME = zombieHorde
 CC = c++
 CFLAGS =  -std=c++98
 CFLAGS += -Wall -Wextra -Werror
-CFILES = main.cpp Zombie.cpp
+CFILES = main.cpp Zombie.cpp zombieHorde.cpp
 OBJS_DIR = ./objs/
 SRC_DIR = ./src/
 OBJS = ${addprefix ${OBJS_DIR}, ${CFILES:.cpp=.o}}
