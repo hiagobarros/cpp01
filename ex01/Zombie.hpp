@@ -8,6 +8,7 @@
 #define BUE "\033[34m"
 #define RST "\033[0m"
 #define RED "\033[31m"
+#define YLW "\033[33m"
 
 
 #include <iostream>

@@ -22,13 +22,13 @@ bool Sed::replaceInFile(const std::string& filename, const std::string& s1, cons
         return false;
     }
 
-    std::ifstream inFile(filename);
+    std::ifstream inFile(filename.c_str());
     if (!inFile) {
         std::cerr << "Error: cannot open input file." << std::endl;
         return false;
     }
 
-    std::ofstream outFile(filename + ".replace");
+    std::ofstream outFile((filename + ".replace").c_str());
     if (!outFile) {
         std::cerr << "Error: cannot create output file." << std::endl;
         return false;
@@ -36,7 +36,7 @@ bool Sed::replaceInFile(const std::string& filename, const std::string& s1, cons
 
     std::string line;
     while (std::getline(inFile, line)) {
-        outFile << replaceAll(line, s1, s2) << '\n';
+        outFile << replaceAll(line, s1, s2) <<std::endl;
     }
 
     return true;

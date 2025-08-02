@@ -16,9 +16,9 @@
 
     void Zombie::announce( void )
     {
-        std::cout<<GRN<<_name<<": BraiiiiiiinnnzzzZ.."<<RST<<std::endl;
+        std::cout<<GRN<<name<<": BraiiiiiiinnnzzzZ.."<<RST<<std::endl;
     }
 
     Zombie::~Zombie(){
-            std::cout<<RED<<"Zombie: "<<_name<<" destroyed!!!"<<RED<<std::endl;
+            std::cout<<RED<<"Zombie: "<<name<<" destroyed!!!"<<RST<<std::endl;
         };

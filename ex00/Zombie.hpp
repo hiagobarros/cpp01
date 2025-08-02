@@ -13,10 +13,10 @@
 class Zombie
 {
     private:
-        std::string _name;
+        std::string name;
     public:
         Zombie(std::string name){
-            this->_name = name;
+            this->name = name;
         };
         ~Zombie();
 
