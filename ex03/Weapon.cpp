@@ -4,7 +4,6 @@
 
 
 
-
         std::string Weapon::getType() const 
         {
             return(type);

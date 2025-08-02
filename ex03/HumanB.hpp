@@ -10,14 +10,12 @@ class HumanB
 {
     private:
         std::string _name;
-        Weapon _weapon;
-    public:
-        HumanB(std::string name): _name(name)
-        {
-            this->_name = name;
-        }
+        Weapon* _weapon;
 
-        void setWeapon(Weapon weapon);
+    public:
+        HumanB(std::string name) : _name(name), _weapon(nullptr) {}
+
+        void setWeapon(Weapon& weapon);
 
         void attack();
 };
